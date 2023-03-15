@@ -1,8 +1,12 @@
  /* Global styling */
  :root {
     --fs-s: 1.5rem;
+    --fs-m: 2rem;
     --clr-rb: #141e30;
     --clr-rb2: #243b55;
+    --clr-font_header: #fff;
+    --clr-font_body: #b9b9b9;
+    --clr-font_link: #005d81;
  }
  
  * {
@@ -16,6 +20,7 @@
 .navbar {
   overflow: hidden;
   background-color: var(--clr-rb);
+  width: 100%
 }
 
 .navbar a {
@@ -50,6 +55,7 @@
 .subnav-content {
   display: none;
   position: absolute;
+  top: 56px;
   left: 0;
   background-color:var(--clr-rb2);
   width: 100%;
@@ -74,4 +80,16 @@
 /* Main styling */
 body {
   background: linear-gradient(45deg, var(--clr-rb), var(--clr-rb2));
+  font-family: var(--ff-primary);
+  font-size: var(--fs-m);
+  color: var(--clr-primary);
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.welcome {
+  color: var(--clr-font_header);
 }
