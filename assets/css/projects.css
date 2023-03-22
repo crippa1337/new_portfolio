@@ -22,6 +22,11 @@ img {
     overflow: hidden;
     transition: 0.5s ease-in-out;
     max-height: 6rem;
+    text-decoration: none;
+}
+
+.card a {
+    text-decoration: none;
 }
 
 .card:hover {
