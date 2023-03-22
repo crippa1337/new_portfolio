@@ -23,12 +23,13 @@ h1 {
     display: grid;
     place-items: center;
     gap: 0.5rem;
+    /* the actual auto-grid, it resizes the items between 200 pixels and 1 fraction */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .image {
     /* 
-        if width is auto, it'll use the image size
+        if width is auto, as per default, it'll use the image size
         so we use 100% to make it adjust to it's parent
     */
     width: 100%;
