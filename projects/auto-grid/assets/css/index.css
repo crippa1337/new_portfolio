@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #243b55;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.image {
+    /* 
+        if width is auto, it'll use the image size
+        so we use 100% to make it adjust to it's parent
+    */
+    width: 100%;
+    object-fit: cover;
+    transition: ease-in-out 0.1s;
+    filter: sepia(1);
+    opacity: 0.5;
+}
+
+.image:hover {
+    cursor: pointer;
+    filter: sepia(0);
+    opacity: 1;
+}
+
+.grid:hover .image:not(.image:hover) {
+    filter: sepia(1);
+    opacity: 0.25;
+}
+
+.spin-image {
+    animation: spin-image 1s ease-in-out;
+    animation-iteration-count: 1
+}
+
+@keyframes spin-image {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
