@@ -32,3 +32,15 @@ main {
 a {
   color: var(--clr-font_link);
 }
+
+@media (max-width: 768px) {
+  .about {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1184px) {
+  .about {
+    width: 80%;
+  }
+}
