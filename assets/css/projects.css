@@ -1,5 +1,4 @@
 main {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +20,7 @@ img {
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
     overflow: hidden;
     transition: 0.5s ease-in-out;
-    max-height: 6rem;
+    max-height: 8rem;
     text-decoration: none;
 }
 
@@ -52,4 +51,22 @@ img {
 .description {
     color: var(--clr-font_body);
     font-size: var(--fs-s);
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 125%;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .card {
+        max-height: 10rem;
+    }
+
+    .description {
+        font-size: var(--fs-xs);
+    }
 }

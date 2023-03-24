@@ -1,5 +1,6 @@
  /* Global styling */
  :root {
+  --fs-xs: 1rem;
     --fs-s: 1.5rem;
     --fs-m: 2rem;
     --clr-rb: #141e30;
