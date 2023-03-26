@@ -28,13 +28,8 @@ img {
     text-decoration: none;
 }
 
-.card a {
-    text-decoration: none;
-}
-
 .card:hover {
     max-height: 20rem;
-    cursor: pointer;
 }
 
 .cards:hover .card:not(.card:hover) {
@@ -48,8 +43,10 @@ img {
 }
 
 .card__title {
-    color: var(--clr-font_header);
+    text-decoration: underline;
+    color: var(--clr-font_link);
     font-size: var(--fs-m);
+    cursor: pointer;
 }
 
 .card__description {
