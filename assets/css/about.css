@@ -1,3 +1,5 @@
+/* Main styling */
+
 main {
   display: grid;
   place-items: center;
@@ -32,6 +34,8 @@ main {
 a {
   color: var(--clr-font_link);
 }
+
+/* Responsivity */
 
 @media (max-width: 768px) {
   .about {

@@ -1,3 +1,5 @@
+/* Main styling */
+
 main {
     display: flex;
     justify-content: center;
@@ -8,6 +10,8 @@ main {
 img {
     width: 75%;
 }
+
+/* Project cards */
 
 .cards {
     width: 50%
@@ -52,6 +56,8 @@ img {
     color: var(--clr-font_body);
     font-size: var(--fs-s);
 }
+
+/* Responsivity */
 
 @media (max-width: 768px) {
     img {

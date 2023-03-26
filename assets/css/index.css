@@ -1,4 +1,5 @@
  /* Global styling */
+ 
  :root {
   --fs-xs: 1rem;
     --fs-s: 1.5rem;
@@ -18,6 +19,7 @@
  }
  
  /* Nav styling */
+
 .navbar {
   overflow: hidden;
   background-color: var(--clr-rb);
@@ -79,6 +81,7 @@
 } 
 
 /* Main styling */
+
 body {
   background: linear-gradient(45deg, var(--clr-rb), var(--clr-rb2));
   font-family: var(--ff-primary);
@@ -93,4 +96,12 @@ body {
 
 .welcome {
   color: var(--clr-font_header);
+}
+
+/* Responsivity */
+
+@media (max-width: 768px) {
+  .welcome {
+    font-size: var(--fs-s);
+  }
 }
