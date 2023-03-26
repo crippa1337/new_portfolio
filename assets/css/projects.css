@@ -47,12 +47,12 @@ img {
     justify-content: space-between;
 }
 
-.title {
+.card__title {
     color: var(--clr-font_header);
     font-size: var(--fs-m);
 }
 
-.description {
+.card__description {
     color: var(--clr-font_body);
     font-size: var(--fs-s);
 }
@@ -70,6 +70,24 @@ img {
 
     .card {
         max-height: 10rem;
+    }
+
+    .description {
+        font-size: var(--fs-xs);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1184px) {
+    img {
+        width: 100%;
+    }
+
+    .cards {
+        width: 75%;
+    }
+
+    .card {
+        max-height: 9rem;
     }
 
     .description {
