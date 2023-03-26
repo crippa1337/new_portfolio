@@ -8,7 +8,7 @@ main {
 }
 
 img {
-    width: 75%;
+    width: clamp(5rem, 20vw, 15rem);
 }
 
 /* Project cards */
@@ -60,10 +60,6 @@ img {
 /* Responsivity */
 
 @media (max-width: 768px) {
-    img {
-        width: 125%;
-    }
-
     .cards {
         width: 100%;
     }
@@ -78,10 +74,6 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1184px) {
-    img {
-        width: 100%;
-    }
-
     .cards {
         width: 75%;
     }
