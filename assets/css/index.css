@@ -80,6 +80,14 @@
   display: block;
 } 
 
+.mobile {
+  display: none;
+}
+
+.mobile__links {
+  display: none;
+}
+
 /* Main styling */
 
 body {
@@ -96,12 +104,68 @@ body {
 
 .welcome {
   color: var(--clr-font_header);
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 /* Responsivity */
 
 @media (max-width: 768px) {
-  .welcome {
-    font-size: var(--fs-s);
+  /* Turn off default nav */
+  .navbar {
+    display: none;
+  }
+
+  /* Mobile menu */
+  .mobile {
+    display: block;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    min-height: 3rem;
+  }
+
+  .mobile__navbar {
+    color: var(--clr-font_header);
+    background: var(--clr-rb);
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger:hover {
+    cursor: pointer;
+  }
+
+  .mobile__links {
+    flex-direction: column;
+    background: var(--clr-rb2);
+  }
+
+  .mobile__links a, mobile__links a:visited {
+    color: var(--clr-font_header);
+    padding: 0.5rem;
+    width: 100vw;
+  }
+
+  .mobile__links a:hover {
+    background: var(--clr-rb);
+  }
+
+  .open {
+    display: flex;
+    position: absolute;
+    z-index: 999;
   }
 }
