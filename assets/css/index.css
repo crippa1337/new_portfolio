@@ -82,10 +82,12 @@
 
 .mobile {
   display: none;
+  z-index: 999;
 }
 
 .mobile__links {
   display: none;
+  z-index: 999;
 }
 
 /* Main styling */
@@ -166,6 +168,5 @@ body {
   .open {
     display: flex;
     position: absolute;
-    z-index: 999;
   }
 }
