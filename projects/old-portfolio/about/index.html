@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/about.css">
+
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <!-- Font Import -->
+</head>
+
+<body>
+    <div class="flex">
+        <nav>
+            <div class="navbar">
+                <div class="subnav">
+                    <ul>
+                        <!--Draggable and the noselect class are used to make the buttons non-draggable, the noselect class has
+                        support for multiple browsers aswell, although that is not necessary for this project I included it as the
+                        tutorial regarding it included it so I thought "why not"-->
+                        <li class="subnav-btn"><a draggable="false" class="btn-link noselect" href="../home/">Home</a></li>
+                        <li class="subnav-btn"><a draggable="false" class="btn-link noselect" href="../about/">About</a></li>
+                        <li class="subnav-btn"><a draggable="false" class="btn-link noselect" href="../contact">Contact</a></li>
+                        <li class="subnav-btn"><a draggable="false" class="btn-link noselect" href="../projects/">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="container-content">
+                <div>
+                    <h1>About</h1>
+                </div>
+                <!--I use ID's here to give their CSS priority over other CSS affecting the p tag.-->
+                <div>
+                    <p id="about-text">My name is Cristopher and I am a swedish high school student.
+                        Currently I am learning web development through the WEBWEU01 course.
+
+                        To find out more about what I am working on, head over to my <a id="about-anchor" href="../projects/">projects</a> page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

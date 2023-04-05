@@ -23,7 +23,7 @@ h1 {
 .cards {
     width: 66%;
     /* prevent vertical scaling */
-    min-height: calc(10rem * 7 + 20rem);
+    min-height: calc(10rem * 8 + 20rem);
 }
 
 .card {
@@ -93,7 +93,7 @@ h1 {
     }
 
     .card__content img {
-        width: 10rem;
+        width: 8rem;
     }
 
     .description {

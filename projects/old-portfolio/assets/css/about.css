@@ -1,0 +1,134 @@
+/* In reality I don't need these media queries since
+I am not going for accesability on this website, but
+due to me thinking I was going to in the beginning of the
+project and defining fontsizes here I am going to keep it anyways,
+but this could definitely be removed since I never expanded on it
+past font sizes
+*/
+@media screen and (min-width: 700px) {
+    .container-content h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-content p,
+    b {
+        margin: 0;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .container-content h1 {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-content p,
+    b {
+        margin: 0;
+        font-size: 1rem;
+    }
+}
+
+* {
+    font-family: "Comfortaa", cursive;
+    color: #52734d;
+    font-size: 1rem;
+}
+
+body {
+    background: #feffde;
+    padding: 0;
+    margin: 0;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.flex {
+    display: flex;
+    min-height: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #91c788;
+    min-height: 100%;
+    height: 100vh;
+}
+
+.subnav-btn {
+    border: none;
+    border-radius: 0.45rem;
+    width: 100%;
+    background: #ddffbc;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0.2rem;
+    text-align: center;
+    list-style: none;
+
+    transition: 0.12s;
+    overflow: hidden;
+}
+
+.subnav-btn:hover {
+    scale: 1.1;
+    transform: translateX(2rem);
+    cursor: pointer;
+}
+
+.subnav-btn:active {
+    filter: brightness(1.175);
+}
+
+.btn-link {
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.container-content {
+    padding-inline: 12rem;
+}
+
+.container-content h1 {
+    margin: 0;
+    padding-bottom: 5rem;
+    padding-top: 0;
+}
+
+.container-content p {
+    margin: 0;
+}
+
+#about-text {
+    font-size: 2rem;
+}
+
+#about-anchor {
+    font-size: 2rem;
+}
+
+
