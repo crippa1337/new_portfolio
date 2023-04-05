@@ -93,7 +93,7 @@
 /* Main styling */
 
 body {
-  background: linear-gradient(45deg, var(--clr-rb), var(--clr-rb2));
+  background: linear-gradient(90deg, var(--clr-rb), var(--clr-rb2));
   font-family: var(--ff-primary);
   font-size: var(--fs-m);
   color: var(--clr-primary);
@@ -106,7 +106,7 @@ body {
 
 .welcome {
   color: var(--clr-font_header);
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(3rem, 5vw, 5rem);
 }
 
 .noselect {
@@ -139,7 +139,7 @@ body {
   .mobile__navbar {
     color: var(--clr-font_header);
     background: var(--clr-rb);
-    padding: 0.5rem;
+    padding: 1rem;
 
     display: flex;
     justify-content: space-between;
@@ -153,6 +153,7 @@ body {
   .mobile__links {
     flex-direction: column;
     background: var(--clr-rb2);
+    text-align: center;
   }
 
   .mobile__links a, mobile__links a:visited {

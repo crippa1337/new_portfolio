@@ -8,19 +8,20 @@ main {
 }
 
 .about {
-    background-color: var(--clr-rb);
-    width: 40%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    width: 60%;
 }
 
 .about__header {
-  font-size: 2rem;
+  text-align: center;
+  font-size: clamp(2rem, 5rem, 7vw);
   color: var(--clr-font_header);
   padding-top: 2rem;
   padding-left: 2rem;
 }
 
 .about__text {
-  font-size: var(--fs-s);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   color: var(--clr-font_body);
   padding-inline: 2rem;
   padding-bottom: 2rem;
@@ -46,5 +47,15 @@ a {
 @media (min-width: 768px) and (max-width: 1184px) {
   .about {
     width: 80%;
+  }
+
+  .about__header {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .about__text {
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
   }
 }

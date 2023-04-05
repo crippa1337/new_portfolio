@@ -14,7 +14,7 @@ img {
 /* Project cards */
 
 .cards {
-    width: 50%
+    width: 66%
 }
 
 .card {
@@ -24,17 +24,8 @@ img {
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
     overflow: hidden;
     transition: 0.5s ease-in-out;
-    max-height: 8rem;
+    max-height: 10rem;
     text-decoration: none;
-}
-
-.card:hover {
-    max-height: 20rem;
-}
-
-.cards:hover .card:not(.card:hover) {
-    opacity: 0.5;
-    filter: blur(1.5px);
 }
 
 .card__content {
@@ -45,7 +36,7 @@ img {
 .card__title {
     text-decoration: underline;
     color: var(--clr-font_link);
-    font-size: var(--fs-m);
+    font-size: clamp(3rem, 2vw, 4rem);
     cursor: pointer;
 }
 
@@ -59,10 +50,20 @@ img {
 @media (max-width: 768px) {
     .cards {
         width: 100%;
+        padding: 1rem;
+        padding-inline: 3rem;
     }
 
     .card {
-        max-height: 10rem;
+        max-height: 30rem;
+    }
+
+    .card__content {
+        flex-direction: column;
+    }
+
+    .card__content img {
+        width: 50%;
     }
 
     .description {
@@ -76,10 +77,29 @@ img {
     }
 
     .card {
-        max-height: 9rem;
+        max-height: 20rem;
+    }
+
+    .card__content {
+        flex-direction: column;
+    }
+
+    .card__content img {
+        width: 25%;
     }
 
     .description {
         font-size: var(--fs-xs);
+    }
+}
+
+@media (min-width: 1184px) {
+    .card:hover {
+        max-height: 20rem;
+    }
+
+    .cards:hover .card:not(.card:hover) {
+        opacity: 0.5;
+        filter: blur(1.5px);
     }
 }
