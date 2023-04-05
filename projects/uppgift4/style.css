@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    animation: spin 1s linear infinite;
+}
+
+.button:active {
+    animation: bounce 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0rem);}
+    50% {transform: translateY(2rem);}
+    100% {transform: translateY(-5rem);}
+}
