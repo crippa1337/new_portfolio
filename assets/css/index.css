@@ -107,6 +107,7 @@ body {
 .welcome {
   color: var(--clr-font_header);
   font-size: clamp(3rem, 5vw, 5rem);
+  margin: 2rem;
 }
 
 .noselect {
