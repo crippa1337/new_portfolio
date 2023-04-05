@@ -20,6 +20,24 @@
  
  /* Nav styling */
 
+ .skip-link {
+    inset: 0;
+    opacity: 0;
+    background-color: white;
+    outline: #c7efff solid 3px;
+    position: absolute;
+    z-index: 99999999;
+    transition: all 0.3s ease-in-out;
+    width: 10rem;
+    height: fit-content;
+    pointer-events: none;
+ }
+
+ .skip-link:focus {
+    pointer-events: all;
+    opacity: 1;
+ }
+
 .navbar {
   overflow: hidden;
   background-color: var(--clr-rb);
