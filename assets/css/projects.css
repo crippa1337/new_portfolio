@@ -11,6 +11,13 @@ img {
     width: clamp(5rem, 20vw, 15rem);
 }
 
+h1 {
+    font-size: clamp(3rem, 4vw, 5rem);
+    color: var(--clr-font_body);
+    text-align: center;
+    margin: 3rem;
+}
+
 /* Project cards */
 
 .cards {
@@ -55,15 +62,16 @@ img {
     }
 
     .card {
-        max-height: 30rem;
+        max-height: 40rem;
     }
 
     .card__content {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 2rem;
     }
 
     .card__content img {
-        width: 50%;
+        width: 10rem;
     }
 
     .description {
@@ -80,12 +88,8 @@ img {
         max-height: 20rem;
     }
 
-    .card__content {
-        flex-direction: column;
-    }
-
     .card__content img {
-        width: 25%;
+        width: 10rem;
     }
 
     .description {
